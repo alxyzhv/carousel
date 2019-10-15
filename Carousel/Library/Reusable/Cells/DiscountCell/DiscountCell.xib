@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DiscountCell" customModule="Carousel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="269"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="269"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWb-1Z-xfG">
+                        <rect key="frame" x="0.0" y="0.0" width="340" height="269"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="europe" translatesAutoresizingMaskIntoConstraints="NO" id="Ral-cC-Z7k">
+                                <rect key="frame" x="0.0" y="0.0" width="340" height="269"/>
+                            </imageView>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHZ-8V-8T4">
+                                <rect key="frame" x="0.0" y="0.0" width="340" height="269"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кешбек 1.53%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0x-px-wqZ">
+                                <rect key="frame" x="16" y="215.5" width="308" height="19.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="За авиабилеты" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3j-77-888">
+                                <rect key="frame" x="16" y="239" width="308" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ral-cC-Z7k" secondAttribute="bottom" id="10a-QW-aIX"/>
+                            <constraint firstItem="c3j-77-888" firstAttribute="leading" secondItem="m0x-px-wqZ" secondAttribute="leading" id="5p0-oK-oB0"/>
+                            <constraint firstAttribute="trailing" secondItem="m0x-px-wqZ" secondAttribute="trailing" constant="16" id="Ai7-hv-hY8"/>
+                            <constraint firstAttribute="trailing" secondItem="Ral-cC-Z7k" secondAttribute="trailing" id="B2U-AF-K78"/>
+                            <constraint firstAttribute="trailing" secondItem="kHZ-8V-8T4" secondAttribute="trailing" id="CXh-Nb-pkA"/>
+                            <constraint firstItem="kHZ-8V-8T4" firstAttribute="top" secondItem="qWb-1Z-xfG" secondAttribute="top" id="Db8-0q-Gut"/>
+                            <constraint firstAttribute="bottom" secondItem="kHZ-8V-8T4" secondAttribute="bottom" id="EsY-Rw-e1N"/>
+                            <constraint firstItem="Ral-cC-Z7k" firstAttribute="leading" secondItem="qWb-1Z-xfG" secondAttribute="leading" id="IK7-jw-unu"/>
+                            <constraint firstItem="kHZ-8V-8T4" firstAttribute="leading" secondItem="qWb-1Z-xfG" secondAttribute="leading" id="OHd-S4-9Jv"/>
+                            <constraint firstAttribute="bottom" secondItem="c3j-77-888" secondAttribute="bottom" constant="16" id="Q8l-I5-jlS"/>
+                            <constraint firstItem="c3j-77-888" firstAttribute="trailing" secondItem="m0x-px-wqZ" secondAttribute="trailing" id="Qx1-NI-EAx"/>
+                            <constraint firstItem="m0x-px-wqZ" firstAttribute="leading" secondItem="qWb-1Z-xfG" secondAttribute="leading" constant="16" id="hE7-32-5Yh"/>
+                            <constraint firstItem="Ral-cC-Z7k" firstAttribute="top" secondItem="qWb-1Z-xfG" secondAttribute="top" id="wG3-iH-Dxh"/>
+                            <constraint firstItem="c3j-77-888" firstAttribute="top" secondItem="m0x-px-wqZ" secondAttribute="bottom" constant="4" id="xyh-lk-AzS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qWb-1Z-xfG" secondAttribute="trailing" id="BJv-Ec-AsM"/>
+                <constraint firstItem="qWb-1Z-xfG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EfO-kh-QSN"/>
+                <constraint firstItem="qWb-1Z-xfG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ecJ-L7-vRP"/>
+                <constraint firstAttribute="bottom" secondItem="qWb-1Z-xfG" secondAttribute="bottom" id="lUA-Zp-CwE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="340" height="269"/>
+            <connections>
+                <outlet property="containerView" destination="qWb-1Z-xfG" id="cGy-tf-WAd"/>
+                <outlet property="descriptionLabel" destination="c3j-77-888" id="eh1-Fe-Zam"/>
+                <outlet property="imageView" destination="Ral-cC-Z7k" id="tBx-Sw-q2n"/>
+                <outlet property="titleLabel" destination="m0x-px-wqZ" id="G0M-N1-gqo"/>
+            </connections>
+            <point key="canvasLocation" x="71.014492753623188" y="96.763392857142847"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="europe" width="975.5" height="650"/>
+    </resources>
+</document>
