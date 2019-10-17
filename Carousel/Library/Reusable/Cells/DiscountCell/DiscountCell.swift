@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DiscountCell: UICollectionViewCell {
+final class DiscountCell: UICollectionViewCell {
 
     // MARK: - Subviews
 

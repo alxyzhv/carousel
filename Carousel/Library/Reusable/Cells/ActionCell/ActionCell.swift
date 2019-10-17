@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ActionCell: UICollectionViewCell {
+final class ActionCell: UICollectionViewCell {
 
     // MARK: - Subviews
 
