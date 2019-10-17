@@ -14,6 +14,7 @@
 		EB52FD6823551A7500C971D8 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB52FD6723551A7500C971D8 /* Action.swift */; };
 		EB52FD6C235520A600C971D8 /* DiscountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB52FD6A235520A600C971D8 /* DiscountCell.swift */; };
 		EB52FD6D235520A600C971D8 /* DiscountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB52FD6B235520A600C971D8 /* DiscountCell.xib */; };
+		EB658B9A235914EB00423033 /* Video.mov in Resources */ = {isa = PBXBuildFile; fileRef = EB658B99235914EB00423033 /* Video.mov */; };
 		EBC369B9235274BF006D13F3 /* LeftedFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC369B8235274BF006D13F3 /* LeftedFlowLayout.swift */; };
 		EBF48EE1235098C4000C821E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF48EE0235098C4000C821E /* AppDelegate.swift */; };
 		EBF48EE5235098C4000C821E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF48EE4235098C4000C821E /* MainViewController.swift */; };
@@ -37,6 +38,8 @@
 		EB52FD6723551A7500C971D8 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		EB52FD6A235520A600C971D8 /* DiscountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountCell.swift; sourceTree = "<group>"; };
 		EB52FD6B235520A600C971D8 /* DiscountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscountCell.xib; sourceTree = "<group>"; };
+		EB658B97235913FE00423033 /* Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.png; sourceTree = "<group>"; };
+		EB658B99235914EB00423033 /* Video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Video.mov; sourceTree = "<group>"; };
 		EBC369B8235274BF006D13F3 /* LeftedFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftedFlowLayout.swift; sourceTree = "<group>"; };
 		EBF48EDD235098C4000C821E /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF48EE0235098C4000C821E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +84,15 @@
 			path = DiscountCell;
 			sourceTree = "<group>";
 		};
+		EB658B96235913EC00423033 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				EB658B99235914EB00423033 /* Video.mov */,
+				EB658B97235913FE00423033 /* Screenshot.png */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		EBF48ED4235098C4000C821E = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +100,7 @@
 				EB3F9DED235660AE00DC27C3 /* README.md */,
 				EBF48EDF235098C4000C821E /* Carousel */,
 				EBF48EDE235098C4000C821E /* Products */,
+				EB658B96235913EC00423033 /* Demo */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,8 +210,8 @@
 		EBF48F0B2350AEC6000C821E /* FlowLayouts */ = {
 			isa = PBXGroup;
 			children = (
-				EBC369B8235274BF006D13F3 /* LeftedFlowLayout.swift */,
 				EB52FD64235511A400C971D8 /* CenteredFlowLayout.swift */,
+				EBC369B8235274BF006D13F3 /* LeftedFlowLayout.swift */,
 			);
 			path = FlowLayouts;
 			sourceTree = "<group>";
@@ -263,6 +276,7 @@
 			files = (
 				EBF48EED235098C5000C821E /* LaunchScreen.storyboard in Resources */,
 				EBF48F062350A668000C821E /* ActionCell.xib in Resources */,
+				EB658B9A235914EB00423033 /* Video.mov in Resources */,
 				EB52FD6D235520A600C971D8 /* DiscountCell.xib in Resources */,
 				EBF48EEA235098C5000C821E /* Assets.xcassets in Resources */,
 				EBF48EE8235098C4000C821E /* MainViewController.storyboard in Resources */,
