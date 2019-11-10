@@ -8,22 +8,22 @@
 
 import UIKit
 
-final class InfiniteCollectionViewDataSource<Model>: NSObject, UICollectionViewDataSource {
+final class InfiniteCollectionViewDataSource<Cell: UICollectionViewCell, Model>: NSObject, UICollectionViewDataSource {
 
     // MARK: - Nested Types
 
-    typealias CellConfigurator = (Model, UICollectionViewCell) -> Void
+    typealias CellConfigurator = (Model, Cell) -> Void
 
     // MARK: - Pirivate Properties
 
     private var data: [Model]
-    private var cellClass: UICollectionViewCell.Type
+    private var cellClass: Cell.Type
     private var cellConfigurator: CellConfigurator
     private let multiplier = 1000
 
     // MARK: - Initialization
 
-    init(data: [Model], cellClass: UICollectionViewCell.Type, cellConfigurator: @escaping CellConfigurator) {
+    init(data: [Model], cellClass: Cell.Type, cellConfigurator: @escaping CellConfigurator) {
         self.data = data
         self.cellClass = cellClass
         self.cellConfigurator = cellConfigurator

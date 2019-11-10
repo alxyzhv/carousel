@@ -26,8 +26,8 @@ final class MainViewController: UIViewController {
         Discount(title: "Кэшбэк 3%", description: "KFC", backgroundImageName: "kfc"),
     ]
 
-    private var actionsDataSource: CollectionViewDataSource<Action>?
-    private var discountsDataSource: InfiniteCollectionViewDataSource<Discount>?
+    private var actionsDataSource: CollectionViewDataSource<ActionCell, Action>?
+    private var discountsDataSource: InfiniteCollectionViewDataSource<DiscountCell, Discount>?
 
     // MARK: - Subviews
 
@@ -61,9 +61,6 @@ private extension MainViewController {
         actionsCollectionView.register(ActionCell.self)
 
         actionsDataSource = CollectionViewDataSource(data: actions, cellClass: ActionCell.self) { action, cell in
-            guard let cell = cell as? ActionCell else {
-                return
-            }
             cell.configure(title: action.title, icon: action.icon)
         }
         actionsCollectionView.dataSource = actionsDataSource
@@ -81,9 +78,6 @@ private extension MainViewController {
             data: discounts,
             cellClass: DiscountCell.self
         ) { discount, cell in
-            guard let cell = cell as? DiscountCell else {
-                return
-            }
             cell.configure(title: discount.title, description: discount.description, image: discount.backgroundImage)
         }
         discountsCollectionView.dataSource = discountsDataSource

@@ -8,21 +8,21 @@
 
 import UIKit
 
-final class CollectionViewDataSource<Model>: NSObject, UICollectionViewDataSource {
+final class CollectionViewDataSource<Cell: UICollectionViewCell, Model>: NSObject, UICollectionViewDataSource {
 
     // MARK: - Nested Types
 
-    typealias CellConfigurator = (Model, UICollectionViewCell) -> Void
+    typealias CellConfigurator = (Model, Cell) -> Void
 
     // MARK: - Pirivate Properties
 
     private var data: [Model]
-    private var cellClass: UICollectionViewCell.Type
+    private var cellClass: Cell.Type
     private var cellConfigurator: CellConfigurator
 
     // MARK: - Initialization
 
-    init(data: [Model], cellClass: UICollectionViewCell.Type, cellConfigurator: @escaping CellConfigurator) {
+    init(data: [Model], cellClass: Cell.Type, cellConfigurator: @escaping CellConfigurator) {
         self.data = data
         self.cellClass = cellClass
         self.cellConfigurator = cellConfigurator
